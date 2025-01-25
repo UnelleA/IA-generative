@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générateur d'images IA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Générateur d'images avec IA</h1>
+
+    <!-- Formulaire pour entrer la description -->
+    <form id="descriptionForm">
+      <label for="descriptionInput">Décrivez l'image que vous voulez générer :</label>
+      <textarea id="descriptionInput" rows="4" placeholder="Entrez votre description ici..." required></textarea>
+      <button type="button" id="generatePromptBtn">Générer des suggestions</button>
+    </form>
+
+    <!-- Zone d'affichage des suggestions -->
+    <div id="promptSuggestions" class="suggestions">
+      <h2>Suggestions de l'IA</h2>
+      <ul id="suggestionsList"></ul>
+    </div>
+
+    <!-- Bouton pour générer l'image -->
+    <button type="button" id="generateImageBtn" disabled>Générer l'image</button>
+
+    <!-- Zone d'affichage de la barre de chargement -->
+    <div id="loading" style="display: none;">
+      <p>Génération en cours...</p>
+    </div>
+
+    <!-- Zone d'affichage de l'image générée -->
+    <div id="generatedImage" class="image-display">
+      <h2>Image générée</h2>
+      <img id="imageResult" alt="L'image générée apparaîtra ici" style="display: none;">
+      <button id="downloadBtn" style="display: none;">Télécharger l'image</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

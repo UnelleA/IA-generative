@@ -1,0 +1,112 @@
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+  width: 80%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1, h2 {
+  text-align: center;
+  color: #333333;
+}
+
+/* Styles pour le formulaire */
+label {
+
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+ 
+  
+}
+
+textarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+/* Boutons */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Zone pour les suggestions */
+.suggestions ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.suggestions li {
+  background: #f9f9f9;
+  border: 1px solid #eeeeee;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.suggestions li:hover {
+  background: #007BFF;
+  color: white;
+}
+
+/* Affichage de l'image générée */
+.image-display img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+/* Barre de chargement */
+#loading {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Style pour le bouton de téléchargement */
+#downloadBtn {
+  background-color: #28a745;
+  color: white;
+}
